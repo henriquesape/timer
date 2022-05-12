@@ -1,0 +1,15 @@
+
+
+cosnt [segundos, setSegundos] = useState<String>("00");
+const [minutos, setMinutos] = useState<String>("25");
+
+var i = 0;
+var j = 25;
+
+function startTimer(){
+    const timer = setInterval(timeCounter, 1000);
+    setTimeout (() => {
+        clearInterval(timer);
+    }, 250000);
+
+}
